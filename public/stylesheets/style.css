@@ -1,8 +1,16 @@
 body {
   padding: 50px;
+  background: lightseagreen;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+nav{
+  text-align: center;
+}
+
 a {
-  color: #00B7FF;
+  color: darkslateblue;
+  margin: 12px;
+  font-size: 2.5em;
+  /*color: #00B7FF;*/
 }

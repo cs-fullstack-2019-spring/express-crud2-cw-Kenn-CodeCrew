@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Welcome to the Posts Page
+  each entry in allEntries
+    p PostID: #{entry.id} UserID: #{entry.userId} Title: #{entry.title}
+  else
+    h1 No Entries

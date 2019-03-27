@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Delete Page
+    form(action='/deletePost')
+        p
+            label(for='id') Enter ID to delete:
+            input(type='text', id="id", name='id')
+        button Submit

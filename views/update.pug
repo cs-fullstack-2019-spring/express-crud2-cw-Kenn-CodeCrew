@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+    h1 Update a Post
+
+    form(action='/saveOldPost')
+        p
+            label(for='id') Enter the old Post ID to change the associated data:
+            input(type='text', name='id', id='id', placeholder='ID')
+        p
+            label(for='title') Enter new title:
+            input(type='text', name='title', id='title', placeholder='title')
+        p
+            label(for='body') Enter new body:
+            //input(type='textarea', name='body', id='body', placeholder='body')
+            textarea(name="body", id='body', placeholder="Enter the body of the post here")
+        button Submit
